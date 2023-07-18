@@ -3,25 +3,50 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-pharagraph: #ececec;
+  --color-headings: #000;
+  --thm-base-orange: #fb8827;
+  --thm-base-green: #4ade80;
+  --phagraph-gray-color: #929292;
+  --dark-gray-color: #3c3c3b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.pharagraph-color {
+  color: var(--color-pharagraph);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.pharagraph-gray {
+  color: var(--phagraph-gray-color);
+}
+
+.pharagraph-gray-bg {
+  background-color: var(--phagraph-gray-color);
+}
+
+.headings-color {
+  color: var(--color-headings);
+}
+
+.thm-orange-color {
+  color: var(--thm-base-orange);
+}
+
+.thm-orange-bg {
+  background-color: var(--thm-base-orange);
+}
+
+.thm-green-color {
+  color: var(--thm-base-green);
+}
+
+.thm-green-bg {
+  background-color: var(--thm-base-green);
+}
+
+.dark-gray-color {
+  color: var(--dark-gray-color);
+}
+
+.dark-gray-bg {
+  background-color: var(--dark-gray-color);
 }
