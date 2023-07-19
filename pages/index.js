@@ -509,7 +509,7 @@ export default function Home() {
         </div>
       </BannerSection>
 
-      <Section className="bg-slate-400">
+      {/* <Section className="bg-slate-400">
         <div className="flex justify-center items-center ">
           <div className="   ">
             <iframe
@@ -522,7 +522,7 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       <HowItWorks />
 
