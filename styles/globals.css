@@ -50,3 +50,12 @@
 .dark-gray-bg {
   background-color: var(--dark-gray-color);
 }
+
+/* for Audience section animation */
+.flip-image {
+  transition: 0.5s ease-in-out;
+}
+
+.animate-flip:hover > .flip-image {
+  transform: rotateY(180deg);
+}
