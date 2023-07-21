@@ -4,7 +4,7 @@ import Button from "./Button";
 import Section from "./Section";
 
 // images
-import problemImg from "@/public/images/index-page/problem.png";
+import problemImg from "../public/images/index-page/problem.png";
 
 export default function Problem() {
   return (
