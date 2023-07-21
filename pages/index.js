@@ -6,11 +6,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 // components
 import Section from "../components/Section";
-import Layout from "@/components/Layout";
-import Button from "@/components/Button";
-import ProblemSection from "@/components/Problemsection";
-import AudinceSection from "@/components/Audince";
-import OurStyle from "@/components/OurStyle";
+import Layout from "../components/Layout";
+import Button from "../components/Button";
+import ProblemSection from "../components/Problemsection";
+import AudinceSection from "../components/Audince";
+import OurStyle from "../components/OurStyle";
 import Delicious from "../components/Delicious";
 import GallerySlider from "../components/SwiperSlider";
 
