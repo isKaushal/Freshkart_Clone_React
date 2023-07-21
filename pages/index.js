@@ -11,7 +11,7 @@ import Button from "@/components/Button";
 import ProblemSection from "@/components/Problemsection";
 import AudinceSection from "@/components/Audince";
 import OurStyle from "@/components/OurStyle";
-import SliderMotion from "../components/MotionSlider";
+import Delicious from "../components/Delicious";
 import GallerySlider from "../components/SwiperSlider";
 
 // images
@@ -32,17 +32,11 @@ const HowItWorks = () => {
     <Section>
       <div className="flex justify-center items-center">
         <div className="text-center lg:w-[60%]  ">
-          <h1 className=" thm-green-color  text-center text-lg  ">
-            HOW IT WORKS
-          </h1>
-          <h1 className="font-bold text-5xl my-4   ">
-            We deliver daily meals, directly to your home or office
-          </h1>
+          <h1 className=" thm-green-color  text-center text-lg  ">HOW IT WORKS</h1>
+          <h1 className="font-bold text-5xl my-4   ">We deliver daily meals, directly to your home or office</h1>
           <p className="text-lg phagraph-gray pharagraph-gray  ">
-            Set your food preferences and fitness goals and our recommendation
-            engine will generate a meal plan that is right for you. We cook the
-            meals and deliver it to you everyday at your preferred delivery slot
-            and location.
+            Set your food preferences and fitness goals and our recommendation engine will generate a meal plan that is right for you. We cook the
+            meals and deliver it to you everyday at your preferred delivery slot and location.
           </p>
         </div>
       </div>
@@ -56,20 +50,12 @@ const HowItWorks = () => {
             transition={{ delay: 0.5 }}
             className="w-full flex justify-center   "
           >
-            <Image
-              className="w-[15rem] my-10  h-auto "
-              src={How_1}
-              quality={100}
-              alt="img"
-            />
+            <Image className="w-[15rem] my-10  h-auto " src={How_1} quality={100} alt="img" />
           </motion.div>
           <div>
-            <h1 className="text-2xl font-semibold  ">
-              1. Set your preferences and goals
-            </h1>
+            <h1 className="text-2xl font-semibold  ">1. Set your preferences and goals</h1>
             <p className="text-lg pharagraph-gray  ">
-              We have a wide variety of meals to fit your needs. Set your food
-              preferences and fitness goals and our recommendation engine will
+              We have a wide variety of meals to fit your needs. Set your food preferences and fitness goals and our recommendation engine will
               suggest a meal plan for you.
             </p>
           </div>
@@ -83,20 +69,12 @@ const HowItWorks = () => {
             transition={{ delay: 0.6 }}
             className="w-full flex justify-center   "
           >
-            <Image
-              className="w-[15rem] my-10  h-auto "
-              src={How_2}
-              quality={100}
-              alt="img"
-            />
+            <Image className="w-[15rem] my-10  h-auto " src={How_2} quality={100} alt="img" />
           </motion.div>
           <div>
-            <h1 className="text-2xl font-semibold  ">
-              2. Subscribe to Weekly Meal Plans
-            </h1>
+            <h1 className="text-2xl font-semibold  ">2. Subscribe to Weekly Meal Plans</h1>
             <p className="text-lg pharagraph-gray  ">
-              We cook the meals with locally sourced ingredients, free of
-              additives and preservatives - just like home cooked meals.
+              We cook the meals with locally sourced ingredients, free of additives and preservatives - just like home cooked meals.
             </p>
           </div>
         </div>
@@ -109,22 +87,13 @@ const HowItWorks = () => {
             transition={{ delay: 0.7 }}
             className="w-full flex justify-center   "
           >
-            <Image
-              className="w-[15rem] my-10  h-auto "
-              src={How_3}
-              quality={100}
-              alt="img"
-            />
+            <Image className="w-[15rem] my-10  h-auto " src={How_3} quality={100} alt="img" />
           </motion.div>
           <div>
-            <h1 className="text-2xl font-semibold  ">
-              3. Get meals right where you are
-            </h1>
+            <h1 className="text-2xl font-semibold  ">3. Get meals right where you are</h1>
             <p className="text-lg pharagraph-gray  ">
-              We deliver meals warm at your location in a timeslot that you
-              choose. You can get lunch and dinner, delivered to your home or
-              office. You can change location and time up to 24 hours before
-              delivery.
+              We deliver meals warm at your location in a timeslot that you choose. You can get lunch and dinner, delivered to your home or office.
+              You can change location and time up to 24 hours before delivery.
             </p>
           </div>
         </div>
@@ -174,12 +143,8 @@ function OurUsers() {
 
   return (
     <Section style={{ marginTop: "0rem" }}>
-      <h1 className="headings-color text-5xl font-bold  text-center  ">
-        What our users say
-      </h1>
-      <h2 className="text-2xl pharagraph-gray my-8 mt-4 text-center ">
-        Our users love what we do!
-      </h2>
+      <h1 className="headings-color text-5xl font-bold  text-center  ">What our users say</h1>
+      <h2 className="text-2xl pharagraph-gray my-8 mt-4 text-center ">Our users love what we do!</h2>
 
       <motion.div
         className="grid grid-cols-12 lg:gap-8 md:gap-5 gap-y-5   "
@@ -223,9 +188,7 @@ const BannerSection = styled.div`
   }
 `;
 
-function Delicious() {
-  const ref = useRef(null);
-
+function DeliciousSection() {
   const deliciousList = [
     {
       src: "/images/index-page/delicious/1.jpg",
@@ -255,7 +218,6 @@ function Delicious() {
 
   return (
     <section
-      ref={ref}
       style={{
         backgroundColor: "black",
         overflow: "hidden",
@@ -263,71 +225,19 @@ function Delicious() {
         paddingTop: "4rem",
       }}
     >
-      <Section style={{ marginBottom: "0rem ", padding: "0rem" }}>
-        <h1 className="text-5xl xl:text-6xl mb-20  text-white font-bold">
-          Delicious meals, one tap away!
-        </h1>
+      <Section style={{ marginTop: "0rem ", padding: "0rem" }}>
+        <h1 className="text-5xl xl:text-6xl text-white font-bold">Delicious meals, one tap away!</h1>
+        <h1 className="text-2xl uppercase text-white font-bold mt-3">Get upto 75% discount on your first Order</h1>
+        <div className="my-4 mb-8">
+          <Button style={{ margin: "0rem" }} />
+        </div>
       </Section>
-      <SliderMotion baseVelocity={2}>
-        {[...deliciousList, ...deliciousList].map((value, index) => {
-          return (
-            <div
-              key={index}
-              className="flex justify-center items-center w-[12rem] h-auto my-4"
-            >
-              <img
-                src={value.src}
-                alt=""
-                style={{
-                  width: "10rem",
-                  height: "10rem",
-                  borderRadius: "15px",
-                }}
-              />
-            </div>
-          );
-        })}
-      </SliderMotion>
-      <SliderMotion baseVelocity={-5}>
-        {[...deliciousList, ...deliciousList].map((value, index) => {
-          return (
-            <div
-              key={index}
-              className="flex justify-center items-center w-[12rem] h-auto my-4"
-            >
-              <img
-                src={value.src}
-                alt=""
-                style={{
-                  width: "10rem",
-                  height: "10rem",
-                  borderRadius: "15px",
-                }}
-              />
-            </div>
-          );
-        })}
-      </SliderMotion>
-      <SliderMotion baseVelocity={10}>
-        {[...deliciousList, ...deliciousList].map((value, index) => {
-          return (
-            <div
-              key={index}
-              className="flex justify-center items-center w-[12rem] h-auto my-4"
-            >
-              <img
-                src={value.src}
-                alt=""
-                style={{
-                  width: "10rem",
-                  height: "10rem",
-                  borderRadius: "15px",
-                }}
-              />
-            </div>
-          );
-        })}
-      </SliderMotion>
+
+      <section>
+        <Delicious list={deliciousList} speed="20" />
+        <Delicious list={deliciousList} direction="reverse" speed="15" />
+        <Delicious list={deliciousList} />
+      </section>
     </section>
   );
 }
@@ -380,9 +290,7 @@ function Gallary() {
   ];
 
   return (
-    <Section
-      style={{ backgroundColor: "#000", margin: "0rem", padding: "5rem 0rem" }}
-    >
+    <Section style={{ backgroundColor: "#000", margin: "0rem", padding: "5rem 0rem" }}>
       <div>
         <h1 className=" text-5xl font-bold mb-6 text-white  ">Gallery</h1>
         <GallerySlider list={items} />
@@ -448,8 +356,7 @@ export default function Home() {
                   }}
                   className="pharagraph-gray text-lg"
                 >
-                  We deliver healthy, all-natural cooked food every day based on
-                  your nutritional needs
+                  We deliver healthy, all-natural cooked food every day based on your nutritional needs
                 </motion.p>
                 <motion.div
                   initial={{ y: 30, opacity: 0 }}
@@ -532,19 +439,14 @@ export default function Home() {
 
       <OurStyle />
 
-      <Delicious />
+      <DeliciousSection />
 
       <OurUsers />
 
       <Section>
-        <h2 className="pharagraph-gray text-xl font-semibold text-center">
-          High quality meals tailored to your dietary preferences
-        </h2>
+        <h2 className="pharagraph-gray text-xl font-semibold text-center">High quality meals tailored to your dietary preferences</h2>
 
-        <div
-          style={{ borderBottom: "1px solid var(--phagraph-gray-color)" }}
-          className="grid grid-cols-12 pb-20 pt-10   "
-        >
+        <div style={{ borderBottom: "1px solid var(--phagraph-gray-color)" }} className="grid grid-cols-12 pb-20 pt-10   ">
           <>
             <motion.div
               className="col-span-12 md:col-span-6 lg:col-span-3"
@@ -553,12 +455,7 @@ export default function Home() {
               viewport={{ once: true, amount: 0.8 }}
               transition={{ duration: 0.2, type: "spring", stiffness: 30 }}
             >
-              <Image
-                className="w-[50%] lg:w-full h-auto "
-                src={QualityImage_1}
-                quality={100}
-                alt="img"
-              />
+              <Image className="w-[50%] lg:w-full h-auto " src={QualityImage_1} quality={100} alt="img" />
             </motion.div>
             <motion.div
               className="col-span-12 md:col-span-6 lg:col-span-3"
@@ -572,12 +469,7 @@ export default function Home() {
                 stiffness: 30,
               }}
             >
-              <Image
-                className="w-[50%] lg:w-full h-auto"
-                src={QualityImage_2}
-                quality={100}
-                alt="img"
-              />
+              <Image className="w-[50%] lg:w-full h-auto" src={QualityImage_2} quality={100} alt="img" />
             </motion.div>
             <motion.div
               className="col-span-12 md:col-span-6 lg:col-span-3"
@@ -591,12 +483,7 @@ export default function Home() {
                 stiffness: 30,
               }}
             >
-              <Image
-                className="w-[50%] lg:w-full h-auto"
-                src={QualityImage_3}
-                quality={100}
-                alt="img"
-              />
+              <Image className="w-[50%] lg:w-full h-auto" src={QualityImage_3} quality={100} alt="img" />
             </motion.div>
             <motion.div
               className="col-span-12 md:col-span-6 lg:col-span-3"
@@ -610,15 +497,9 @@ export default function Home() {
                 stiffness: 30,
               }}
             >
-              <Image
-                className="w-[50%] lg:w-full h-auto"
-                src={QualityImage_4}
-                quality={100}
-                alt="img"
-              />
+              <Image className="w-[50%] lg:w-full h-auto" src={QualityImage_4} quality={100} alt="img" />
             </motion.div>
           </>
-          ,
         </div>
       </Section>
 
@@ -633,12 +514,8 @@ export default function Home() {
         <div className="lg:flex h-full w-full  ">
           <div className="lg:w-2/4 w-full   flex justify-center items-center">
             <div className="">
-              <h1 className="text-6xl text-white font-bold">
-                Get Access today!
-              </h1>
-              <h2 className="text-lg text-white mb-8 mt-4">
-                Download our app now and check out meal options.
-              </h2>
+              <h1 className="text-6xl text-white font-bold">Get Access today!</h1>
+              <h2 className="text-lg text-white mb-8 mt-4">Download our app now and check out meal options.</h2>
               <div className="flex">
                 <motion.div
                   initial={{ opacity: 0, x: -20, rotateZ: -2 }}
@@ -678,14 +555,18 @@ export default function Home() {
               className="flex justify-center py-14 lg:py-0"
             >
               <Image
+                width={300}
+                height={100}
                 src={Access_1}
-                className="lg:w-[50%] w-[30%] lg:-translate-y-[10rem] h-auto drop-shadow-2xl -rotate-12"
+                className=" -translate-y-[8rem]  h-auto drop-shadow-2xl -rotate-12"
                 style={{ objectFit: "fill" }}
                 alt=""
               />
               <Image
+                width={300}
+                height={100}
                 src={Access_2}
-                className="lg:w-[50%] w-[30%] lg:-translate-y-[10rem] h-auto drop-shadow-2xl rotate-12"
+                className=" -translate-y-[8rem]  h-auto drop-shadow-2xl rotate-12"
                 style={{ objectFit: "fill" }}
                 alt=""
               />

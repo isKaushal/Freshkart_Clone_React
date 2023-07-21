@@ -28,7 +28,7 @@ const NavbarStyles = styled.div`
 export default function Navbar() {
   return (
     <motion.div
-      className="w-screen shadow-lg flex justify-center"
+      className="w-full shadow-lg flex justify-center"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", duration: 0.2, stiffness: 25 }}

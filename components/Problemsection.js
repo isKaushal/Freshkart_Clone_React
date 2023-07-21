@@ -21,7 +21,7 @@ export default function Problem() {
           </div>
         </div>
         <div className="w-1/2 flex justify-center">
-          <Image src={problemImg} width={500} height={500} quality={100} alt="" />
+          <Image src={problemImg} width={500} height={500} quality={100} alt="" style={{ aspectRatio: "1/1" }} />
         </div>
       </div>
     </Section>
