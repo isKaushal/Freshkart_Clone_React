@@ -1,4 +1,4 @@
-import Section from "./Section";
+import Section from "../components/Section";
 import { Pencil, Paperplane, Search, Settings } from "@/components/icons";
 
 const cardArray = [

@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import { Work_Sans } from "next/font/google";
 
 const roboto = Work_Sans({

@@ -28,8 +28,8 @@ import mobileAwards6 from "../public/images/about-page/awards/TestnTrack-as-High
 // components
 import Layout from "components/Layout";
 import CardContainer from "components/Card";
-import Section from "@/components/Section";
-import Button from "@/components/Button";
+import Section from "../components/Section";
+import Button from "../components/Button";
 // import { ThmButton } from "components/Buttons";
 // import IndexStyles from "styles/pages/Index.module.css";
 
@@ -196,12 +196,7 @@ const CardBox = styled.div`
     &::before {
       transition: opacity 0.5s linear;
       opacity: 1;
-      background: linear-gradient(
-        135deg,
-        rgba(255, 170, 105, 1) 20%,
-        rgba(255, 144, 60, 1) 60%,
-        rgba(255, 129, 34, 1) 100%
-      );
+      background: linear-gradient(135deg, rgba(255, 170, 105, 1) 20%, rgba(255, 144, 60, 1) 60%, rgba(255, 129, 34, 1) 100%);
     }
 
     h6 {
@@ -218,8 +213,7 @@ const SectionBox = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-direction: ${(props) =>
-    props.smallScreenCol ? "column" : "column-reverse"};
+  flex-direction: ${(props) => (props.smallScreenCol ? "column" : "column-reverse")};
   min-height: 40rem;
   margin-block: 5rem;
 
@@ -257,11 +251,7 @@ const SectionBox = styled.div`
     top: 0;
     left: 0;
     background: rgb(74, 222, 128);
-    background: linear-gradient(
-      rgba(74, 222, 128, 1) 0%,
-      rgba(74, 222, 128, 1) 28%,
-      rgba(255, 255, 255, 1) 100%
-    );
+    background: linear-gradient(rgba(74, 222, 128, 1) 0%, rgba(74, 222, 128, 1) 28%, rgba(255, 255, 255, 1) 100%);
     z-index: -1;
     transform: rotate(35deg) translateX(15%);
     border-radius: 10%;
@@ -275,11 +265,7 @@ const SectionBox = styled.div`
     top: 0;
     right: 0;
     background: rgb(74, 222, 128);
-    background: linear-gradient(
-      rgba(74, 222, 128, 1) 0%,
-      rgba(74, 222, 128, 1) 28%,
-      rgba(255, 255, 255, 1) 100%
-    );
+    background: linear-gradient(rgba(74, 222, 128, 1) 0%, rgba(74, 222, 128, 1) 28%, rgba(255, 255, 255, 1) 100%);
     z-index: -1;
     transform: rotate(-35deg) translateX(-15%);
     border-radius: 10%;
@@ -339,12 +325,7 @@ const SectionText = styled.div`
   .line {
     height: 3px;
     width: 30%;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(230, 230, 230, 0.76234243697479) 77%,
-      rgba(208, 206, 206, 1) 100%
-    );
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 0.76234243697479) 77%, rgba(208, 206, 206, 1) 100%);
   }
 
   .icon {
@@ -356,8 +337,7 @@ const SectionText = styled.div`
 const DifferentCard = styled.section`
   display: flex;
   justify-content: center;
-  flex-direction: ${(props) =>
-    props.smallScreenCol ? "column" : "column-reverse;"};
+  flex-direction: ${(props) => (props.smallScreenCol ? "column" : "column-reverse;")};
   margin-block: 10rem;
 
   .section1-left {
@@ -414,12 +394,7 @@ const DifferentCard = styled.section`
 const BottomGetStartFooter = styled.div`
   width: 100%;
   border-top: 1px solid #dfdfdfb8;
-  background: linear-gradient(
-      90deg,
-      rgba(13, 13, 13, 0.5),
-      rgba(13, 13, 13, 0.5),
-      rgba(13, 13, 13, 0.5)
-    ),
+  background: linear-gradient(90deg, rgba(13, 13, 13, 0.5), rgba(13, 13, 13, 0.5), rgba(13, 13, 13, 0.5)),
     url(/images/about-page/about-page-formbg.webp);
   padding: 3rem;
 
@@ -585,22 +560,13 @@ export default function WhatIsPage() {
                 <div className="part">
                   <h2>Examination Services Provider</h2>
                   <p>
-                    TestnTrack is an AI backed, SaaS platform and a one-stop
-                    shop for all your <br />
-                    examination needs, including physical and digital
-                    examination, instant solution key, customised papers{" "}
-                    {isExtraWideScreen ? <br /> : null} based on latest board
-                    pattern, comprehensive analysis report, audio explanation
-                    for each question and result declaration within 360 minutes.
-                    It is here to build the most advanced and quick-witted
-                    examination services provider for K-12, entrance, and
-                    professional exams.
+                    TestnTrack is an AI backed, SaaS platform and a one-stop shop for all your <br />
+                    examination needs, including physical and digital examination, instant solution key, customised papers{" "}
+                    {isExtraWideScreen ? <br /> : null} based on latest board pattern, comprehensive analysis report, audio explanation for each
+                    question and result declaration within 360 minutes. It is here to build the most advanced and quick-witted examination services
+                    provider for K-12, entrance, and professional exams.
                   </p>
-                  <a
-                    href="https://youtu.be/9UApmDjishY"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://youtu.be/9UApmDjishY" target="_blank" rel="noreferrer">
                     <div className="my-4">
                       <Button />
                     </div>
@@ -608,11 +574,7 @@ export default function WhatIsPage() {
                 </div>
               </div>
               <div className="heroRight col  ">
-                <a
-                  href="https://youtu.be/EbyKdDkmWxg"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="https://youtu.be/EbyKdDkmWxg" target="_blank" rel="noreferrer">
                   <div className="iconCircle">
                     <BsFillPlayFill style={{ color: "white", scale: "2" }} />
                   </div>
@@ -625,33 +587,21 @@ export default function WhatIsPage() {
         <HeroSectionMobile>
           <div className="heroRight col">
             <div className="iconCircle">
-              <Image
-                style={{ width: "100%", height: "100%" }}
-                alt="TestnTrack Banner"
-                src={mobileHero}
-              />
+              <Image style={{ width: "100%", height: "100%" }} alt="TestnTrack Banner" src={mobileHero} />
             </div>
           </div>
           <div className="heroleft col  ">
             <div style={{ textAlign: "center" }} className="mobileContent">
               <h2>Examination Services Provider</h2>
               <p>
-                TestnTrack is an AI backed, SaaS platform and a one-stop shop
-                for all your examination needs, including physical and digital
-                examination, instant solution key, customised papers based on
-                latest board pattern, comprehensive analysis report, audio
-                explanation for each question and result declaration within 360
-                minutes. It is here to build the most advanced and quick-witted
-                examination services provider for K-12, entrance, and
-                professional exams.
+                TestnTrack is an AI backed, SaaS platform and a one-stop shop for all your examination needs, including physical and digital
+                examination, instant solution key, customised papers based on latest board pattern, comprehensive analysis report, audio explanation
+                for each question and result declaration within 360 minutes. It is here to build the most advanced and quick-witted examination
+                services provider for K-12, entrance, and professional exams.
               </p>
             </div>
             <div className="btn">
-              <a
-                href="https://youtu.be/9UApmDjishY"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://youtu.be/9UApmDjishY" target="_blank" rel="noreferrer">
                 <Button />
               </a>
             </div>
@@ -667,18 +617,12 @@ export default function WhatIsPage() {
                 <CardBox>
                   <div className="circle"></div>
                   <div className="card-icon">
-                    <Image
-                      src={differentIcon1}
-                      width={56}
-                      height={56}
-                      alt="icon_1"
-                    />
+                    <Image src={differentIcon1} width={56} height={56} alt="icon_1" />
                   </div>
                   <h6>Customised Question Paper</h6>
                   <p>
-                    We are burgeoning to transform the way question papers are
-                    developed by utilising up-to-the-minute information on the
-                    latest board pattern as an asset.
+                    We are burgeoning to transform the way question papers are developed by utilising up-to-the-minute information on the latest board
+                    pattern as an asset.
                   </p>
                 </CardBox>
               </CardContainer>
@@ -686,18 +630,12 @@ export default function WhatIsPage() {
                 <CardBox>
                   <div className="circle"></div>
                   <div className="card-icon">
-                    <Image
-                      src={differentIcon2}
-                      width={56}
-                      height={56}
-                      alt="icon_2"
-                    />
+                    <Image src={differentIcon2} width={56} height={56} alt="icon_2" />
                   </div>
                   <h6>Shedule Your Exams </h6>
                   <p>
-                    All thanks to our AI-enabled system, we are all set to
-                    prepare micro study plans for students, and regularly update
-                    them on the upcoming tests and exams via notifications.
+                    All thanks to our AI-enabled system, we are all set to prepare micro study plans for students, and regularly update them on the
+                    upcoming tests and exams via notifications.
                   </p>
                 </CardBox>
               </CardContainer>
@@ -705,19 +643,12 @@ export default function WhatIsPage() {
                 <CardBox>
                   <div className="circle"></div>
                   <div className="card-icon">
-                    <Image
-                      src={differentIcon5}
-                      width={56}
-                      height={56}
-                      alt="icon_5"
-                    />
+                    <Image src={differentIcon5} width={56} height={56} alt="icon_5" />
                   </div>
                   <h6>Analytical Result</h6>
                   <p>
-                    We amalgamate conventional techniques with our AI evaluation
-                    system with 98% accuracy. AI enabled comprehensive results
-                    and a digital answer key is provided within 360 minutes to
-                    set the top-notch benchmark.
+                    We amalgamate conventional techniques with our AI evaluation system with 98% accuracy. AI enabled comprehensive results and a
+                    digital answer key is provided within 360 minutes to set the top-notch benchmark.
                   </p>
                 </CardBox>
               </CardContainer>
@@ -727,18 +658,12 @@ export default function WhatIsPage() {
                 <CardBox>
                   <div className="circle"></div>
                   <div className="card-icon">
-                    <Image
-                      src={differentIcon4}
-                      width={56}
-                      height={56}
-                      alt="icon_4"
-                    />
+                    <Image src={differentIcon4} width={56} height={56} alt="icon_4" />
                   </div>
                   <h6>Copy Checking</h6>
                   <p>
-                    Your exam answer sheets will be checked by our Subject
-                    Matter Experts (SMEs), as we want to fill the void between
-                    copy checking and result declaration.
+                    Your exam answer sheets will be checked by our Subject Matter Experts (SMEs), as we want to fill the void between copy checking
+                    and result declaration.
                   </p>
                 </CardBox>
               </CardContainer>
@@ -746,21 +671,12 @@ export default function WhatIsPage() {
                 <CardBox>
                   <div className="circle"></div>
                   <div className="card-icon">
-                    <Image
-                      style={{ filter: "grayscale(100%)" }}
-                      src={differentIcon3}
-                      width={56}
-                      height={56}
-                      alt="icon_3"
-                    />
+                    <Image style={{ filter: "grayscale(100%)" }} src={differentIcon3} width={56} height={56} alt="icon_3" />
                   </div>
                   <h6>Personalised Remarks For Answers</h6>
                   <p>
-                    One foremost differentiating facet is our personalised
-                    evaluation of a student&apos;s weak areas other than just
-                    providing them with the answer key. Our team ensures that we
-                    outline students&apos; errors and bestow them with a
-                    personalised audio explanation.
+                    One foremost differentiating facet is our personalised evaluation of a student&apos;s weak areas other than just providing them
+                    with the answer key. Our team ensures that we outline students&apos; errors and bestow them with a personalised audio explanation.
                   </p>
                 </CardBox>
               </CardContainer>
@@ -770,14 +686,10 @@ export default function WhatIsPage() {
             <SectionText>
               <h3>What Makes Test and Track Different </h3>
               <p>
-                Test and Track come to the fore with an excellent result and
-                performance oriented platform for evaluating the answer sheet,
-                outlining the weak areas and errors with a personalised audio
-                explanation and developing Micro study plans based on each
-                student&apos;s performance. We will be your guide if you want to
-                conduct SWOT analysis of your child. Moreover, we have a
-                plethora of services that will amaze parents, principals,
-                teachers, and students.
+                Test and Track come to the fore with an excellent result and performance oriented platform for evaluating the answer sheet, outlining
+                the weak areas and errors with a personalised audio explanation and developing Micro study plans based on each student&apos;s
+                performance. We will be your guide if you want to conduct SWOT analysis of your child. Moreover, we have a plethora of services that
+                will amaze parents, principals, teachers, and students.
               </p>
             </SectionText>
           </div>
@@ -787,8 +699,7 @@ export default function WhatIsPage() {
       <Section>
         <div className="">
           <h1 className=" text-5xl text-center  ">
-            Test and Track - Awarded Best Examination Sevices Provider <br />{" "}
-            {/* <span className={IndexStyles.dot}> Know Why ? </span>{" "} */}
+            Test and Track - Awarded Best Examination Sevices Provider <br /> {/* <span className={IndexStyles.dot}> Know Why ? </span>{" "} */}
           </h1>
           <SectionBox>
             <div className="side-text">
@@ -797,13 +708,10 @@ export default function WhatIsPage() {
 
                 <h3>Get Your Copies Checked In Just 360 Minutes</h3>
                 <p>
-                  Living in an epoch where convenience and comfort is our
-                  topmost priority, board evaluators and teachers want a
-                  quick-witted and result-oriented platform. Guess what? <br />
-                  Just upload the answer copies and country&apos;s top board
-                  evaluators will check them just in time to add human touch to
-                  the process. Now no more waiting period, serene, and detailed
-                  result in just 6 hours.
+                  Living in an epoch where convenience and comfort is our topmost priority, board evaluators and teachers want a quick-witted and
+                  result-oriented platform. Guess what? <br />
+                  Just upload the answer copies and country&apos;s top board evaluators will check them just in time to add human touch to the
+                  process. Now no more waiting period, serene, and detailed result in just 6 hours.
                 </p>
               </SectionSideText>
             </div>
@@ -845,15 +753,12 @@ export default function WhatIsPage() {
 
                   <h3>Mobile Based Assessment Technology </h3>
                   <p>
-                    Assessment delivery via personal digital assistants and
-                    other electronic devices in a hassle free manner without the
-                    need to switch to your laptop/desktop.
+                    Assessment delivery via personal digital assistants and other electronic devices in a hassle free manner without the need to
+                    switch to your laptop/desktop.
                     <br />
-                    Our Mobile-based assessment (MBA) platform gives us a unique
-                    edge when combined with our cutting-edge solutions to
-                    students, parents, principals/teachers. On Test and Track,
-                    you are just one step away from getting an all-inclusive and
-                    extensive package of examination report.
+                    Our Mobile-based assessment (MBA) platform gives us a unique edge when combined with our cutting-edge solutions to students,
+                    parents, principals/teachers. On Test and Track, you are just one step away from getting an all-inclusive and extensive package of
+                    examination report.
                   </p>
                 </SectionSideText>
               </div>
@@ -869,14 +774,10 @@ export default function WhatIsPage() {
 
                 <h3>Personalised remarks for students </h3>
                 <p>
-                  One of the most enticing features of Test and Track is our
-                  analysed answer copy, outlining the errors of each student by
-                  personalising the audio explanation using candidate
-                  examination and evaluation software. <br />
-                  Adaptive learning is the pedestal of our growth. By
-                  personalising each student&apos;s performance report, SWOT
-                  analysis, and rank analysis in an adaptive manner. Our agenda
-                  is to adapt as per a student&apos;s requirement.
+                  One of the most enticing features of Test and Track is our analysed answer copy, outlining the errors of each student by
+                  personalising the audio explanation using candidate examination and evaluation software. <br />
+                  Adaptive learning is the pedestal of our growth. By personalising each student&apos;s performance report, SWOT analysis, and rank
+                  analysis in an adaptive manner. Our agenda is to adapt as per a student&apos;s requirement.
                 </p>
               </SectionSideText>
             </div>
@@ -918,9 +819,8 @@ export default function WhatIsPage() {
 
                   <h3>Analytical performance result</h3>
                   <p>
-                    With the efficiency of our 600+ board verified evaluators
-                    and AI with 98% accuracy, we analyse each student&apos;s
-                    performance amalgamating both technology and human touch.
+                    With the efficiency of our 600+ board verified evaluators and AI with 98% accuracy, we analyse each student&apos;s performance
+                    amalgamating both technology and human touch.
                   </p>
                 </SectionSideText>
               </div>
@@ -937,21 +837,16 @@ export default function WhatIsPage() {
                 <h1>Award & Recognition</h1>
                 <h3>
                   For being
-                  <span
-                    style={{ textTransform: "capitalize" }}
-                    className="thm-green-color"
-                  >
+                  <span style={{ textTransform: "capitalize" }} className="thm-green-color">
                     {" "}
                     India&apos;s first & fastest copy checking platform
                   </span>
                 </h3>
 
                 <p>
-                  TestnTrack is India&apos;s first ever copy checking platform
-                  recognised by StartupIndia, Edupreneur Village, and certified
-                  by ISO 9001 2015. Moreover, it has won Top performer
-                  recognition by SourceForge in summer 2022 and highest user
-                  satisfaction award from Crozdesk in the same year.
+                  TestnTrack is India&apos;s first ever copy checking platform recognised by StartupIndia, Edupreneur Village, and certified by ISO
+                  9001 2015. Moreover, it has won Top performer recognition by SourceForge in summer 2022 and highest user satisfaction award from
+                  Crozdesk in the same year.
                 </p>
               </SectionSideText>
             </div>
@@ -987,20 +882,15 @@ export default function WhatIsPage() {
               <h3>Award & Recognition</h3>
               <h4>
                 For being
-                <span
-                  style={{ textTransform: "capitalize" }}
-                  className="thm-green-color"
-                >
+                <span style={{ textTransform: "capitalize" }} className="thm-green-color">
                   India&apos;s first & fastest copy checking platform{" "}
                 </span>
               </h4>
 
               <p>
-                TestnTrack is India&apos;s first ever copy checking platform
-                recognised by StartupIndia, Edupreneur Village, and certified by
-                ISO 9001 2015. Moreover, it has won Top performer recognition by
-                SourceForge in summer 2022 and highest user satisfaction award
-                from Crozdesk in the same year.
+                TestnTrack is India&apos;s first ever copy checking platform recognised by StartupIndia, Edupreneur Village, and certified by ISO 9001
+                2015. Moreover, it has won Top performer recognition by SourceForge in summer 2022 and highest user satisfaction award from Crozdesk
+                in the same year.
               </p>
             </SectionSideText>
           </div>
@@ -1013,48 +903,12 @@ export default function WhatIsPage() {
               alignItems: "center",
             }}
           >
-            <Image
-              quality={100}
-              src={mobileAwards1}
-              width={300}
-              height={300}
-              alt="mobile awards"
-            />
-            <Image
-              quality={100}
-              src={mobileAwards2}
-              width={300}
-              height={300}
-              alt="mobile awards"
-            />
-            <Image
-              quality={100}
-              src={mobileAwards3}
-              width={300}
-              height={300}
-              alt="mobile awards"
-            />
-            <Image
-              quality={100}
-              src={mobileAwards4}
-              width={300}
-              height={300}
-              alt="mobile awards"
-            />
-            <Image
-              quality={100}
-              src={mobileAwards5}
-              width={300}
-              height={300}
-              alt="mobile awards"
-            />
-            <Image
-              quality={100}
-              src={mobileAwards6}
-              width={300}
-              height={300}
-              alt="mobile awards"
-            />
+            <Image quality={100} src={mobileAwards1} width={300} height={300} alt="mobile awards" />
+            <Image quality={100} src={mobileAwards2} width={300} height={300} alt="mobile awards" />
+            <Image quality={100} src={mobileAwards3} width={300} height={300} alt="mobile awards" />
+            <Image quality={100} src={mobileAwards4} width={300} height={300} alt="mobile awards" />
+            <Image quality={100} src={mobileAwards5} width={300} height={300} alt="mobile awards" />
+            <Image quality={100} src={mobileAwards6} width={300} height={300} alt="mobile awards" />
           </div>
         </div>
       )}
@@ -1066,17 +920,10 @@ export default function WhatIsPage() {
         <Section style={{ marginBottom: "0rem" }}>
           <div className="mainformWrap">
             <div className="grid grid-cols-12 ">
-              <div
-                style={{ display: "flex", alignItems: "center" }}
-                className="  lg:col-span-6 col-span-12 "
-              >
+              <div style={{ display: "flex", alignItems: "center" }} className="  lg:col-span-6 col-span-12 ">
                 <div>
-                  <h1 className="font-bold text-4xl text-white   ">
-                    Ready to get started ?
-                  </h1>
-                  <p>
-                    Get in touch, or create an account. We are 24/7 available
-                  </p>
+                  <h1 className="font-bold text-4xl text-white   ">Ready to get started ?</h1>
+                  <p>Get in touch, or create an account. We are 24/7 available</p>
                 </div>
               </div>
               <div className="formWrap lg:col-span-6 col-span-12 ">
@@ -1102,20 +949,10 @@ export default function WhatIsPage() {
                     <input name="email" type="email" placeholder="Email*" />
                   </div>
                   <div className="inputWrap">
-                    <input
-                      name="contact"
-                      type="number"
-                      placeholder="Contact*"
-                    />
+                    <input name="contact" type="number" placeholder="Contact*" />
                   </div>
                   <div className="textareaWrap">
-                    <textarea
-                      style={{ fontFamily: "Teko, sans-serif" }}
-                      name="query"
-                      cols="30"
-                      placeholder="Query*"
-                      rows="4"
-                    ></textarea>
+                    <textarea style={{ fontFamily: "Teko, sans-serif" }} name="query" cols="30" placeholder="Query*" rows="4"></textarea>
                   </div>
                   <div className="btnWrap">
                     <Button style={{ borderRadius: "5px" }} label="SEND" />
