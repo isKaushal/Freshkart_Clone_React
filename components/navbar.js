@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import { motion } from "framer-motion";
 
 // images
-import Logo from "@/public/images/logo.png";
+import Logo from "../public/images/logo.png";
 import Button from "./Button";
 
 const NavbarStyles = styled.div`
