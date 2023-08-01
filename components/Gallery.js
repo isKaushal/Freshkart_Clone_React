@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { styled } from "styled-components";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 const SwiperWrap = styled.div`
@@ -41,6 +41,10 @@ export default function Gallery({ list }) {
         centeredSlides={true}
         slidesPerView={"auto"}
         loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -49,15 +53,15 @@ export default function Gallery({ list }) {
           // slideShadows: true,
         }}
         // pagination={true}
-        modules={[EffectCoverflow]}
+        modules={[EffectCoverflow, Autoplay]}
         className="swiper"
       >
         {Array.from({ length: 2 }).map(() => {
           return (
             <>
-              {list.map((data) => {
+              {list.map((data, index) => {
                 return (
-                  <SwiperSlide>
+                  <SwiperSlide key={index}>
                     <div className="relative w-72 h-80 rounded-lg overflow-hidden ">
                       <Image
                         style={{

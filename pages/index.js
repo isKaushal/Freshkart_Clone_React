@@ -5,14 +5,14 @@ import styled from "styled-components";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 // components
-import Section from "../components/Section";
-import Layout from "../components/Layout";
-import Button from "../components/Button";
-import ProblemSection from "../components/Problemsection";
-import AudinceSection from "../components/Audince";
-import OurStyle from "../components/OurStyle";
-import Delicious from "../components/Delicious";
-import GallerySlider from "../components/Gallery";
+import Section from "../components/section";
+import Layout from "../components/layout";
+import Button from "../components/button";
+import ProblemSection from "../components/problemsection";
+import AudinceSection from "../components/audince";
+import OurStyle from "../components/ourStyle";
+import Delicious from "../components/delicious";
+import GallerySlider from "../components/gallery";
 
 // images
 import QualityImage_1 from "../public/images/index-page/quality-1.png";
@@ -334,6 +334,7 @@ function Gallary() {
         backgroundColor: "#000",
         margin: "0rem",
         padding: "5rem 0rem",
+        paddingTop: "0rem",
         position: "relative",
       }}
     >
@@ -497,7 +498,7 @@ export default function Home() {
 
         <div
           style={{ borderBottom: "1px solid var(--phagraph-gray-color)" }}
-          className="grid grid-cols-12 pb-20 pt-10   "
+          className="grid grid-cols-12 pb-20 pt-10"
         >
           <>
             <motion.div
@@ -508,7 +509,7 @@ export default function Home() {
               transition={{ duration: 0.2, type: "spring", stiffness: 30 }}
             >
               <Image
-                className="w-[50%] lg:w-full h-auto "
+                className="w-[50%] lg:w-full h-auto"
                 src={QualityImage_1}
                 quality={100}
                 alt="img"
@@ -631,19 +632,15 @@ export default function Home() {
               className="flex justify-center py-14 lg:py-0"
             >
               <Image
-                width={300}
-                height={100}
                 src={Access_1}
-                className=" -translate-y-[8rem]  h-auto drop-shadow-2xl -rotate-12"
-                style={{ objectFit: "fill" }}
+                className="lg:-translate-y-[8rem] drop-shadow-2xl -rotate-12 w-[35%] lg:w-[55%]  "
+                style={{ objectFit: "cover" }}
                 alt=""
               />
               <Image
-                width={300}
-                height={100}
                 src={Access_2}
-                className=" -translate-y-[8rem]  h-auto drop-shadow-2xl rotate-12"
-                style={{ objectFit: "fill" }}
+                className="lg:-translate-y-[8rem] drop-shadow-2xl rotate-12 w-[35%] lg:w-[55%]  "
+                style={{ objectFit: "cover" }}
                 alt=""
               />
             </motion.div>

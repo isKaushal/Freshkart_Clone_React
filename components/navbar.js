@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 // images
 import Logo from "../public/images/logo.png";
-import Button from "./Button";
+import Button from "./button";
 
 const NavbarStyles = styled.div`
   width: 100%;
@@ -16,11 +16,17 @@ const NavbarStyles = styled.div`
   }
 
   ul {
-    display: flex;
-    align-items: center;
-    & > li {
-      font-weight: 500;
-      margin: 0.5rem 1rem;
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    ul {
+      display: flex;
+      align-items: center;
+      & > li {
+        font-weight: 500;
+        margin: 0.5rem 1rem;
+      }
     }
   }
 `;
@@ -53,7 +59,7 @@ export default function Navbar() {
                 <a href="">Contact</a>
               </li>
             </ul>
-            <div className="ml-8">
+            <div className="lg:ml-8 text-xs sm:text-base  ">
               <Button />
             </div>
           </div>

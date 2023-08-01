@@ -1,6 +1,6 @@
 // components
 import Image from "next/image";
-import Section from "./Section";
+import Section from "./section";
 
 // images
 
@@ -33,13 +33,18 @@ export default function Audience() {
           Hello this is <span className="thm-green-color">Audience</span>
         </h1>
         <p className="pharagraph-gray mt-4 text-lg text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ex omnis quo blanditiis animi repudiandae? Repudiandae temporibus nostrum
-          tempore commodi magnam facere enim facilis, deleniti aut ipsam esse, ipsa corporis.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ex
+          omnis quo blanditiis animi repudiandae? Repudiandae temporibus nostrum
+          tempore commodi magnam facere enim facilis, deleniti aut ipsam esse,
+          ipsa corporis.
         </p>
         <div className="flex flex-wrap justify-center items-center mt-8">
           {cardArray.map((data, index) => {
             return (
-              <div className="w-[380px] m-4 col-span-12 md:col-span-6 lg:col-span-4" key={index}>
+              <div
+                className="w-[380px] m-4 col-span-12 md:col-span-6 lg:col-span-4"
+                key={index}
+              >
                 <div className="animate-flip flex justify-center w-full">
                   <Image
                     src={data.image}
@@ -58,8 +63,10 @@ export default function Audience() {
                 </div>
                 <div>
                   <p className="pharagraph-gray mt-4 text-lg text-center px-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolor enim nam ullam ipsam provident quidem molestias? Alias
-                    explicabo sequi in! Nihil assumenda repellat itaque qui unde? Possimus, eaque excepturi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Beatae dolor enim nam ullam ipsam provident quidem
+                    molestias? Alias explicabo sequi in! Nihil assumenda
+                    repellat itaque qui unde? Possimus, eaque excepturi?
                   </p>
                 </div>
               </div>

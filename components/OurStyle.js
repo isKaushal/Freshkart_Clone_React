@@ -1,5 +1,5 @@
-import Section from "../components/Section";
-import { Pencil, Paperplane, Search, Settings } from "../components/icons";
+import Section from "./section";
+import { Pencil, Paperplane, Search, Settings } from "./icons";
 
 const cardArray = [
   {
