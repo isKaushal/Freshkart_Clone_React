@@ -42,7 +42,15 @@ export default function Navbar() {
       <div className="w-full lg:w-[1024px] xl:w-[1280px] flex justify-center p-4">
         <NavbarStyles>
           <div className="flex items-center">
-            <Image src={Logo} quality={100} width={200} height={100} alt="" />
+            <Image
+              className="hover:scale-90"
+              style={{ transition: "0.3s ease-in-out" }}
+              src={Logo}
+              quality={100}
+              width={200}
+              height={100}
+              alt=""
+            />
           </div>
           <div className="navlinks">
             <ul>
