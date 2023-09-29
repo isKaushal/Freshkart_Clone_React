@@ -52,7 +52,8 @@ export default function Navbar() {
               alt=""
             />
           </div>
-          <div className="navlinks">
+
+          <div className="navlinks hidden lg:flex">
             <ul>
               <li>
                 <a href="">Home</a>
